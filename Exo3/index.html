@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo3</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <h2>Mon Exo3 J-S</h2>
+          <!-- <button class="" onfocus="textblk()" onblur="remeplacedtex()"> -->
+          <div class="" onclick="remeplacedtex()">
+            <p id="text" ondblclick="textblk()">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          <!-- </button> -->
+          <p></p>
+          <!-- attacher ma fonction a mon botton -->
+          <button class="btn btn-outline-danger" type="button" onclick=remetred()>★</button>
+          <button class="btn btn-outline-primary" type="button" onclick=remetblue()>★</button>
+          <button class="btn btn-outline-success" type="button" onclick=remetgreen()>★</button>
+          <!-- <button class="btn btn-outline-secondary" type="button" onclick=remeplacedtex()>★</button> -->
+          <!-- <button  onblur="textblk()">★</button> -->
+        </div>
+      </div>
+    </div>
+
+<script type="text/javascript">
+// let tex = document.getElementById('text');
+let text = document.querySelector('p');
+let tex1 = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+let tex2 = 'Je suis le nouveau texte d\'essai, et je suis là pour remplacer le premier texte';
+  function remetred(){
+    text.style.color = "red";
+  }
+  function remetblue() {
+     text.style.color = "blue";
+  }
+  function remetgreen() {
+     text.style.color = "green";
+  }
+  function textblk() {
+    text.style.color = "black";
+    text.textContent = tex1;
+    // texte.setAttribute("style", "color:black");
+  }
+  function remeplacedtex() {
+    text.textContent = tex2;
+    // texte.setAttribute("style", "color:black");
+  }
+  // outerHTML
+  // p.onfocus = textblk() {
+    // document.getElementById('text').style.color = 'black';
+    // tex.style.color = "gray";
+// };
+  // texte.setAttribute("style", "color:green");
+</script>
+
+  </body>
+</html>

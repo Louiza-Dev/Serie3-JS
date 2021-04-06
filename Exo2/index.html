@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo2</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <h2>Mon Exo2 J-S</h2>
+              <!-- attacher ma fonction a mon botton -->
+              <button class="btn btn-link" onclick=resetFields()>RAZ</button>
+              <button class="btn btn-link" onclick=resetZaghred()>ZAR</button>
+              <button class="btn btn-link" onclick=resetRamp()>RAMP</button>
+              <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    let tex = document.getElementById('text');
+    // let contText = document.querySelector('p');
+      function resetFields(){
+        tex.style.display = "none";
+        // contText.textContent = '';
+      }
+      function resetZaghred() {
+         tex.style.display = "block";
+         // contText.textContent = contText;
+      }
+      function resetRamp() {
+        document.querySelector('p').textContent = 'Je veut aissie un nouveau texte à la place du premier.';
+      }
+    </script>
+
+
+  </body>
+</html>

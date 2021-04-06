@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo4</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <h2>Mon Exo4 J-S</h2>
+          <form class="" action="index.html" method="post">
+            Entrez votre mot de passe:
+            <input id="mdp1" type="text" value="">
+            <p></p>
+            Confirmer le mot de passe:
+            <input id="mdp2" type="text" value="">
+            <button id="dak" type="button" onclick="verifPass()">Ok</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script language="JavaScript">
+    // function verifPass() {
+      // on place les saisies dans des variables pour plus de commodité
+      // psw1 = document.getElementById('mdp1');
+      // psw2 = document.getElementById('mdp2');
+      // ok = document.getElementById('dak');
+      // si les deux saisies sont différentes :
+      // if (psw1.value = '' && psw2.value = '') {
+      //   alert('Veuillez remplir les champs');
+      // }
+      // if ( psw1.value == psw2.value ) {
+      // psw1.style.border = psw2.style.border = "3px solid green";
+      // ok.style.background = "lightgreen";
+      // }
+      // si elles ne sont pas différentes (si elles sont identiques en fait ;-)
+    //   else {
+    //   psw1.style.border = psw2.style.border = "3px solid red";
+    //   ok.style.background = "salmon";
+    //  }
+    // }
+    function verifPass(){
+      psw1 = document.getElementById('mdp1');
+      psw2 = document.getElementById('mdp2');
+      ok = document.getElementById('dak');
+
+      if (psw1.value == psw2.value) {
+      psw1.style.border = psw2.style.border = "3px solid green";
+      ok.style.background = "lightgreen";
+      } else {
+      psw1.style.border = psw2.style.border = "3px solid red";
+      ok.style.background = "salmon";
+      }
+      // if (psw1.value = null && psw2.value = null) {
+      //   alert('Veuillez remplir les champs');
+      // }
+       // && (psw1.value != null && psw2.value != null)
+    }
+    </script>
+
+  </body>
+</html>
